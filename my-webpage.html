@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <style>
-        .container {
-            color: black;
-            background-color: coral;
-            margin: 1em;
-            padding: 1em;
-            border: 1em solid black;
+<style>
+    .container {
+        color: black;
+        background-color: coral;
+        margin: 1em;
+        padding: 1em;
+        border: 1em solid black;
 
-        }
-        .clearfix {
-            overflow: auto;
-            zoom: 1;
-        }
+    }
 
-        .header {
-            display: flex;
-        }
+    .clearfix {
+        overflow: auto;
+        zoom: 1;
+    }
 
-        .header img {
-            float: right;
-            width: 300px;
-            height: 200px;
-        }
+    .header {
+        display: flex;
+    }
 
-        table,
-        th,
-        td {
-            border: 3px solid black;
-            border-collapse: collapse;
-        }
+    .header img {
+        float: right;
+        width: 300px;
+        height: 200px;
+    }
 
-        @media(min-width: 800px) {
+    table,
+    th,
+    td {
+        border: 3px solid black;
+        border-collapse: collapse;
+    }
+
+    @media(min-width: 800px) {
         .content {
             display: flex;
         }
@@ -52,47 +53,81 @@
             padding: 1em;
             margin: 1em;
         }
-        
-            .container {
+
+        .left {
+            height: 150px;
+            width: 150px;
+        }
+
+        .center {
+            height: 150px;
+            width: 150px;
+        }
+
+        .right {
+            height: 150px;
+            width: 150px;
+        }
+
+        .container {
             color: black;
             background-color: coral;
             margin: 1em;
             padding: 1em;
             border: 1em solid black;
-        } 
         }
-    </style>
+    }
+
+    .city {
+        margin: 1em;
+    }
+
+    .parliament {
+
+        display:flex;
+    }
+
+    .castle {
+
+        display:flex;  
+    }
+
+    .market {
+
+        display:flex;  
+
+    }
+
+
+</style>
 
 
 <body>
     <div class="container">
 
-
-
         <div class="clearfix">
-            <img src="./images/t-mountain.jpg" alt="Table Mountain" alt="Table Mountain" height="200px" width="300px" style="float: right;">
+            <img src="./images/t-mountain.jpg" alt="Table Mountain" alt="Table Mountain" height="200px" width="300px"
+                style="float: right;">
             <h1>Sibonisiwe <br>Sodinga</h1>
-        
+
         </div>
 
 
 
-        <h3>Which city</h3>
+        <h2>Which City</h2>
         <div class="fav-city clearfix">
 
             <img src="./images/egypt.jpg" alt="pyramids">
-            <ul>
-                <li>castlecastleLorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Pellentesque nec nam aliquam sem et tortor consequat id.</li>
-                <li>Elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</li>
-                
-            </ul>
+            <div class="city">
+                <h3><u>Egypt</u></h3>
+
+                <p>castlecastleLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Pellentesque nec nam aliquam sem et tortor consequat id.
+                    Elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</p>
+            </div>
         </div>
-
-
-
-        <h3>foreign language</h3>
+        <h2>Foreign Language</h2>
         <div class="language">
             <table style="width:50%">
                 <tr>
@@ -119,11 +154,11 @@
 
 
 
-        <h3>historical places</h3>
+        <h2>Historical Places</h2>
         <div class="content clearfix">
             <div class="parliament">
 
-                <img src="./images/parliament.jpg" alt="parliament">
+                <img class="left" src="./images/parliament.jpg" alt="parliament" style="width: 150px; height: 150px;">
                 <ul>
                     <li>castlecastleLorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
@@ -133,7 +168,7 @@
             </div>
 
             <div class="castle">
-                <img src="./images/castle.jpg" alt="castle of goodhope">
+                <img class="center" src="./images/castle.jpg" alt="castle of goodhope" style="width: 150px; height: 150px;">
                 <ul>
                     <li>castlecastleLorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
@@ -143,7 +178,7 @@
             </div>
 
             <div class="market">
-                <img src="./images/green-market.jpg" alt="Green market square">
+                <img class="right" src="./images/green-market.jpg" alt="Green market square" style="width: 150px; height: 150px;">
                 <ul>
                     <li>castlecastleLorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
@@ -152,15 +187,15 @@
                 </ul>
             </div>
 
-        
-      </div>
+
+        </div>
 
 
 
 
 
 
- </div>
+    </div>
 </body>
 
 </html>
